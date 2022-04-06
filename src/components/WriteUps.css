@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+.background {
+    content: "";
+    background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+      url("./images/back.jpg");
+    position: fixed;
+    background-attachment: scroll;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(5px);
+    margin: -10px; 
+    z-index: -1;
+}
+
+.cat {
+    margin-top: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    box-shadow: 5px 0px 10px #111111;
+}
+
+.text {
+    text-align: center;
+    color:white;
+    font-family: Oxygen;
+}

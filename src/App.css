@@ -1,38 +1,93 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+.background {
+  /* background-image: url("./images/back.jpg");
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  filter: blur(12px);
+  -webkit-filter: blur(12px); */
+  content: "";
+  background-image: linear-gradient(rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.623)),
+    url("./components/images/back.jpg");
+  position: fixed;
+  background-attachment: scroll;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: blur(5px);
+  margin: -10px; /* this will do the trick */
+  z-index: -1;
+  
+}
+
+.terminal {
+  margin-top: 20px;
+  margin-right: 20%;
+  margin-left: 20%;
+}
+
+.title {
+  margin-top: 0px;
+  padding-top: 30px;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Oxygen;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.navigation {
+  color: white;
+  text-align: center;
+  font-family: Oxygen;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+  color: white;
+  display:inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.pipe {
+  display:inline-block
+}
+
+.App {
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
 }
