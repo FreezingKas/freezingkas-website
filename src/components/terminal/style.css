@@ -111,18 +111,3 @@
     position: fixed;
     left: -1000px;
 }
-
-/* .react-terminal-progress {
-  display: flex;
-  margin: .5rem 0;
-}
-
-.react-terminal-progress-bar {
-  background-color: #fff;
-  border-radius: .25rem;
-  width: 25%;
-}
-
-.react-terminal-wrapper.react-terminal-light .react-terminal-progress-bar {
-  background-color: #000;
-} */

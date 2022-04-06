@@ -8,6 +8,7 @@ function App() {
     const [terminalLineData, setTerminalLineData] = useState([
         { type: LineType.Output, value: 'Welcome to the FreezingKas terminal !' },
         { type: LineType.Output, value: 'Type \'help\' to display all commands' },
+        { type: LineType.Output, value: '' }
     ]);
 
     function onInput(string) {
@@ -69,7 +70,7 @@ function App() {
                         colorMode={ColorMode.Dark}
                         lineData={terminalLineData}
                         onInput={onInput}
-                        prompt='max@freezingkas ~ ' />
+                        prompt='max@freezingkas:~$ ' />
                 </div>
             </div>
         </>
