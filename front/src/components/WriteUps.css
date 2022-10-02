@@ -27,6 +27,16 @@
     box-shadow: 5px 0px 10px #111111;
 }
 
+@media (height: 680px),
+screen and (orientation: portrait) {
+    .cat {
+        margin-top: 40%;
+        margin-bottom: auto;
+        height: 15em;
+        width: 15em;
+    }
+}
+
 .text {
     text-align: center;
     color:white;
