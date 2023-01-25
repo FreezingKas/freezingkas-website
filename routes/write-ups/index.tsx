@@ -5,6 +5,7 @@ import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 
 export default function Read(props: PageProps) {
   const writeUps = props.data;
+  console.log(writeUps);
   return (
     <>
       <Head>

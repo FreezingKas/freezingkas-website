@@ -2,7 +2,7 @@ import { Head } from "https://deno.land/x/fresh@1.1.2/runtime.ts";
 import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
 import Header from "../../components/Header.tsx";
 import Input from "../../islands/Input.tsx";
-import {hash,compareSync} from "https://deno.land/x/bcrypt@v0.4.1/mod.ts";
+import {compareSync} from "https://deno.land/x/bcrypt@v0.4.1/mod.ts";
 import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
 import PopUp from "../../components/PopUp.tsx";
 
