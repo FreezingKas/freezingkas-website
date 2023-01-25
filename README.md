@@ -1,4 +1,11 @@
-# freezingkas-website
-My portfolio website
+# FreezingKas Website
 
-Need time to update this
+### Usage
+
+Start the project:
+
+```
+deno task start
+```
+
+What a beautiful technology! 
