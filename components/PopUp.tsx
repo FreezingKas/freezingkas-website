@@ -1,5 +1,3 @@
-import { JSX } from "preact/jsx-runtime";
-
 interface PopUpProps {
     alert: boolean;
 }
