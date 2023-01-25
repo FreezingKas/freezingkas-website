@@ -4,23 +4,21 @@
 
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/_404.tsx";
-import * as $1 from "./routes/admin/_middleware.tsx";
-import * as $2 from "./routes/admin/index.tsx";
-import * as $3 from "./routes/index.tsx";
-import * as $4 from "./routes/projects/index.tsx";
-import * as $5 from "./routes/write-ups/[read].tsx";
-import * as $6 from "./routes/write-ups/index.tsx";
+import * as $1 from "./routes/admin/index.tsx";
+import * as $2 from "./routes/index.tsx";
+import * as $3 from "./routes/projects/index.tsx";
+import * as $4 from "./routes/write-ups/[read].tsx";
+import * as $5 from "./routes/write-ups/index.tsx";
 import * as $$0 from "./islands/Input.tsx";
 
 const manifest = {
   routes: {
     "./routes/_404.tsx": $0,
-    "./routes/admin/_middleware.tsx": $1,
-    "./routes/admin/index.tsx": $2,
-    "./routes/index.tsx": $3,
-    "./routes/projects/index.tsx": $4,
-    "./routes/write-ups/[read].tsx": $5,
-    "./routes/write-ups/index.tsx": $6,
+    "./routes/admin/index.tsx": $1,
+    "./routes/index.tsx": $2,
+    "./routes/projects/index.tsx": $3,
+    "./routes/write-ups/[read].tsx": $4,
+    "./routes/write-ups/index.tsx": $5,
   },
   islands: {
     "./islands/Input.tsx": $$0,
