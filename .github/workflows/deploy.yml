@@ -29,5 +29,4 @@ jobs:
             cd /opt/freezingkas-website
             git pull 
             git status
-            docker build -t freezingkas .
-            docker run -d -p 9001:8000 freezingkas
+            docker-compose up --build --force-recreate -d
