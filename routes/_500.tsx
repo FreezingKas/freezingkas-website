@@ -2,7 +2,7 @@ import { ErrorPageProps } from "$fresh/server.ts";
 import {Head} from "$fresh/src/runtime/head.ts";
 import Header from "../components/Header.tsx";
 
-export default function Error500Page({ error }: ErrorPageProps) {
+export default function Error500Page(props : ErrorPageProps) {
     return (
         <>
             <Head>
