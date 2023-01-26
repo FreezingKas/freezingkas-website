@@ -16,7 +16,7 @@ export default function Read(props: PageProps) {
         {writeUps.map((writeUp: WriteUp) => (
           <a
             href={`/write-ups/${writeUp.name}`}
-            class="text-black text-center font-bold w-64 h-64 flex flex-col items-center justify-center bg-white shadow-xl text-2xl p-4 text-center rounded-xl
+            class="text-black bg-[#FFFAFA] text-center font-bold w-64 h-64 flex flex-col items-center justify-center shadow-xl text-2xl p-4 text-center rounded-xl
                 transform transition duration-500 hover:scale-110 hover:shadow-2xl m-4"
           >
             {writeUp.title}
