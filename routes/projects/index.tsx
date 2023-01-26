@@ -44,7 +44,7 @@ export default function Projects() {
 }
 
 export const handler : Handlers = {
-    async GET(req, ctx) {
+    GET(req, ctx) {
         return ctx.render();
     }
 }

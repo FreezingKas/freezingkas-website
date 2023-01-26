@@ -33,11 +33,11 @@ export default function Admin(props: PageProps) {
 }
 
 export const handler : Handlers = {
-    async GET(req, ctx) {
-        
+    GET(req, ctx) {
         return ctx.render(null);
     },
     async POST(req, ctx) {
+        // Get Form Data
         const form = await req.formData();
 
         // Get env variables
@@ -47,18 +47,19 @@ export const handler : Handlers = {
         const password = form.get("password");
         const passwordMatch = compareSync(password as string, passwordHash);
 
+        // If password is incorrect, return false
         if(!passwordMatch){
             console.log("Password incorrect");
             return ctx.render(false);
         }
 
+        // Get file and filename
         const file = form.get("file");
         const filename = form.get("filename");
 
         // Write string to file
         await Deno.writeTextFile("./files/"+filename, file as string);
-        
-        
+
         return ctx.render(true);
     }
 }

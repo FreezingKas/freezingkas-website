@@ -32,6 +32,7 @@ export const handler: Handlers = {
 
     // read file
     const decoder = new TextDecoder("utf-8");
+    // handle file not found
     let markdown;
     try {
       markdown = decoder.decode(Deno.readFileSync(`./files/${read}.md`));
