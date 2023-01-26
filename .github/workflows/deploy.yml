@@ -29,4 +29,4 @@ jobs:
             cd /opt/freezingkas-website
             git pull 
             git status
-            docker-compose up --build --force-recreate -d
+            docker compose up --build --force-recreate -d
