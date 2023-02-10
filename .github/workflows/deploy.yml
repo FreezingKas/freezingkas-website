@@ -26,7 +26,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           port: 22
           script: |
-            cd /opt/freezingkas-website
+            cd /home/github/freezingkas-website
             git pull 
             git status
             docker compose up --build --force-recreate -d
