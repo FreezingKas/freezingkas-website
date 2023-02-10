@@ -8,11 +8,12 @@ export default function MyHead(props: MyHeadProps) {
     return (
         <Head>
             <title>{props.title}</title>
-            <meta name="description" content="Welcome to the jungle !"></meta>
+            <meta name="description" content="MAK'HACK Member"></meta>
             <meta property="og:title" content="FreezingKas"></meta>
-            <meta property="og:description" content="Welcome to the jungle !"></meta>
+            <meta property="og:description" content="MAK'HACK Member"></meta>
             <meta property="og:image" content="/hero-back.jpg"></meta>
             <meta property="og:url" content="/"></meta>
+            <meta name="twitter:card" content="/hero-back.jpg"/>
             <link rel="stylesheet" href="/main.css"/>
         </Head>
     )
