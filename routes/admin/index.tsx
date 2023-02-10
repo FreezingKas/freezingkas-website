@@ -5,14 +5,13 @@ import Input from "../../islands/Input.tsx";
 import {compareSync} from "https://deno.land/x/bcrypt@v0.4.1/mod.ts";
 import { config } from "https://deno.land/x/dotenv@v3.2.0/mod.ts";
 import PopUp from "../../components/PopUp.tsx";
+import MyHead from "../../components/MyHead.tsx";
 
 export default function Admin(props: PageProps) {
   const result = props.data;
   return (
     <>
-      <Head>
-        <title>Admin</title>
-      </Head>
+        <MyHead title="Admin"></MyHead>
       <Header active={""}></Header>
       <h1 class="text-4xl font-bold text-center my-8">Admin</h1>
       <PopUp alert={result}/>

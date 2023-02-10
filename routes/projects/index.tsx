@@ -1,14 +1,13 @@
 import { Head } from "https://deno.land/x/fresh@1.1.2/runtime.ts";
 import { Handlers } from "https://deno.land/x/fresh@1.1.2/server.ts";
 import Header from "../../components/Header.tsx";
+import MyHead from "../../components/MyHead.tsx";
 
 
 export default function Projects() {
     return (
         <>
-            <Head>
-                <title>Projects</title>
-            </Head>
+            <MyHead title="Projects"></MyHead>
             <Header active={"/projects"}></Header>
             <div class="p-4 mx-auto max-w-screen-lg">
                 <h1 class="text-4xl font-bold text-center my-8">Projects</h1>

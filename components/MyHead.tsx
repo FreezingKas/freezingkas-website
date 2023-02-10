@@ -13,6 +13,7 @@ export default function MyHead(props: MyHeadProps) {
             <meta property="og:description" content="Welcome to the jungle !"></meta>
             <meta property="og:image" content="/hero-back.jpg"></meta>
             <meta property="og:url" content="/"></meta>
+            <link rel="stylesheet" href="/main.css"/>
         </Head>
     )
 }

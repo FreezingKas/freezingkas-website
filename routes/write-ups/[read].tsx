@@ -2,16 +2,14 @@ import { Head } from "https://deno.land/x/fresh@1.1.2/runtime.ts";
 import { Handlers, PageProps } from "https://deno.land/x/fresh@1.1.2/server.ts";
 import { Marked } from "https://deno.land/x/markdown@v2.0.0/mod.ts";
 import Header from "../../components/Header.tsx";
+import MyHead from "../../components/MyHead.tsx";
 
 export default function Read(props: PageProps) {
   const body = props.data;
 
   return (
     <>
-      <Head>
-        <title>Write Ups</title>
-        <link rel="stylesheet" href="/main.css"></link>
-      </Head>
+        <MyHead title="Write-Ups"></MyHead>
       <Header active={"/write-ups"}></Header>
       <div
         data-color-mode="light"
