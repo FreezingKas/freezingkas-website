@@ -12,15 +12,32 @@ export default function Admin(props: PageProps) {
     return (
         <>
             <MyHead title="Admin"></MyHead>
-            <Header active={""}></Header>
+            <Header active={"/"}></Header>
             <h1 class="text-4xl font-bold text-center my-8">Admin</h1>
             <PopUp alert={result}/>
             <div class="p-8 mx-auto max-w-screen-lg text-center items-center shadow-2xl rounded-xl">
                 {/* File Upload */}
                 <form class="flex flex-col items-center gap-4" action="/admin" method="post"
                       enctype="multipart/form-data">
-                    <label class="text-xl font-bold">Upload File</label>
-                    <input type="file" name="file" id="file" class="w-80"/>
+
+                    <label className="text-xl font-bold">Markdown File</label>
+                    <div className="flex items-center justify-center w-full">
+                        <label htmlFor="dropzone-file"
+                               className="flex flex-col items-center justify-center w-1/2 h-64 border-2 border-gray-300 border-dashed rounded-lg cursor-pointer bg-[#FFFAFA]
+                                hover:bg-gray-100">
+                            <div className="flex flex-col items-center justify-center pt-5 pb-6">
+                                <svg aria-hidden="true" className="w-10 h-10 mb-3 text-gray-400" fill="none"
+                                     stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                          d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                                </svg>
+                                <p className="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
+                                    className="font-semibold">Click to upload</span> or drag and drop</p>
+                                <p className="text-xs text-gray-500 dark:text-gray-400">Markdown File only</p>
+                            </div>
+                            <input id="dropzone-file" name="file" type="file" className="hidden"/>
+                        </label>
+                    </div>
                     <label class="text-xl font-bold">Password</label>
                     <Input type="password" name="password" id="password" class="w-80"/>
                     <button class="bg-black text-white font-bold p-2 rounded-lg">Upload</button>
@@ -62,6 +79,12 @@ export const handler: Handlers = {
 
 
         const fileData = new Uint8Array(await file.arrayBuffer());
+        // check if begin tags markdown file
+        if (new TextDecoder().decode(fileData.slice(0, 3)) !== "---") {
+            console.log("File does not have begin tags");
+            return ctx.render(false);
+        }
+
         // check if file already exists
         for (const entry of Deno.readDirSync("./files/")) {
             if (entry.isFile && entry.name === filename) {
