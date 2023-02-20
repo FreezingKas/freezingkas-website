@@ -7,7 +7,7 @@ export default function PopUp(props: PopUpProps) {
     
     if (alert === false) {
         return (
-            <div class="text-red-500 text-center my-8">Password Incorrect</div>
+            <div class="text-red-500 text-center my-8">Password Incorrect or Invalid File</div>
         )
     } else if(alert === true) {
         return (
