@@ -14,6 +14,7 @@ export default function MyHead(props: MyHeadProps) {
             <meta property="og:image" content="/hero-back.jpg"></meta>
             <meta property="og:url" content="/"></meta>
             <meta name="twitter:card" content="summary_large_image"/>
+            <link rel="icon" href="/favicon.ico"/>
             <link rel="stylesheet" href="/main.css"/>
         </Head>
     )
