@@ -16,7 +16,7 @@ services:
       #- "traefik.http.middlewares.freezingkas-https-redirect.redirectscheme.scheme=websecure"
       #- "traefik.http.routers.freezingkas.middlewares=vaultwarden-https-redirect"
       - "traefik.http.routers.freezingkas-secure.entrypoints=websecure"
-      - "traefik.http.routers.freezingkas-secure.rule=Host(`freezingkasfreezingkas.com`)"
+      - "traefik.http.routers.freezingkas-secure.rule=Host(`freezingkas.com`)"
       - "traefik.http.routers.freezingkas-secure.tls=true"
       - "traefik.http.routers.freezingkas-secure.tls.certresolver=lets-encrypt"
       - "traefik.docker.network=web"
