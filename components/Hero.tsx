@@ -1,6 +1,5 @@
 import IconExternalLink from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/external-link.tsx"
 import IconDeviceLaptop from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/device-laptop.tsx"
-import IconDeviceGamepad from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/device-gamepad-2.tsx"
 import IconCup from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/cup.tsx"
 import IconFlag from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/flag.tsx"
 import KubeIcon from "./Icons/Kube.tsx";
@@ -21,7 +20,7 @@ export default function Hero() {
                 </div>
 
                 <div className="flex flex-row gap-2 items-center justify-center">
-                    <KubeIcon size={30}/>
+                    <KubeIcon size={35}/>
                     <p className="text-xl max-w-lg text-blue-100">
                         Kubernetes Lover
                     </p>
