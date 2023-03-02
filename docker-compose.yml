@@ -11,14 +11,14 @@ services:
       - web
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.vaultwarden.entrypoints=web"
-      - "traefik.http.routers.vaultwarden.rule=Host(`bitwarden.freezingkas.com`)"
-      #- "traefik.http.middlewares.vaultwarden-https-redirect.redirectscheme.scheme=websecure"
-      #- "traefik.http.routers.vaultwarden.middlewares=vaultwarden-https-redirect"
-      - "traefik.http.routers.vaultwarden-secure.entrypoints=websecure"
-      - "traefik.http.routers.vaultwarden-secure.rule=Host(`bitwarden.freezingkas.com`)"
-      - "traefik.http.routers.vaultwarden-secure.tls=true"
-      - "traefik.http.routers.vaultwarden-secure.tls.certresolver=lets-encrypt"
+      - "traefik.http.routers.freezingkas.entrypoints=web"
+      - "traefik.http.routers.freezingkas.rule=Host(`freezingkas.com`)"
+      #- "traefik.http.middlewares.freezingkas-https-redirect.redirectscheme.scheme=websecure"
+      #- "traefik.http.routers.freezingkas.middlewares=vaultwarden-https-redirect"
+      - "traefik.http.routers.freezingkas-secure.entrypoints=websecure"
+      - "traefik.http.routers.freezingkas-secure.rule=Host(`freezingkasfreezingkas.com`)"
+      - "traefik.http.routers.freezingkas-secure.tls=true"
+      - "traefik.http.routers.freezingkas-secure.tls.certresolver=lets-encrypt"
       - "traefik.docker.network=web"
 
 
