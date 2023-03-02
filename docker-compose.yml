@@ -4,6 +4,24 @@ services:
     build: .
     volumes:
       - ./files:/app/files
-    ports:
-      - "9001:8000"
+    #ports:
+     # - "9001:8000"
     container_name: freezingkas
+    networks:
+      - web
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.vaultwarden.entrypoints=web"
+      - "traefik.http.routers.vaultwarden.rule=Host(`bitwarden.freezingkas.com`)"
+      #- "traefik.http.middlewares.vaultwarden-https-redirect.redirectscheme.scheme=websecure"
+      #- "traefik.http.routers.vaultwarden.middlewares=vaultwarden-https-redirect"
+      - "traefik.http.routers.vaultwarden-secure.entrypoints=websecure"
+      - "traefik.http.routers.vaultwarden-secure.rule=Host(`bitwarden.freezingkas.com`)"
+      - "traefik.http.routers.vaultwarden-secure.tls=true"
+      - "traefik.http.routers.vaultwarden-secure.tls.certresolver=lets-encrypt"
+      - "traefik.docker.network=web"
+
+
+networks:
+  web:
+    external: true
