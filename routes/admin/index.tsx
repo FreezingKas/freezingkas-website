@@ -18,7 +18,7 @@ export default function Admin(props: PageProps) {
             <div class="p-8 mx-auto max-w-screen-lg text-center items-center shadow-2xl rounded-xl">
                 {/* File Upload */}
                 <form class="flex flex-col items-center gap-4" action="/admin" method="post"
-                      enctype="multipart/form-data">
+                      encType="multipart/form-data">
 
                     <label className="text-xl font-bold">Markdown File</label>
                     <div className="flex items-center justify-center w-full">
@@ -32,7 +32,7 @@ export default function Admin(props: PageProps) {
                                           d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
                                 </svg>
                                 <p className="mb-2 text-sm text-gray-500 dark:text-gray-400"><span
-                                    className="font-semibold">Click to upload</span> or drag and drop</p>
+                                    className="font-semibold">Click to upload</span></p>
                                 <p className="text-xs text-gray-500 dark:text-gray-400">Markdown File only</p>
                             </div>
                             <input id="dropzone-file" name="file" type="file" className="hidden"/>

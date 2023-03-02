@@ -1,7 +1,9 @@
 import IconExternalLink from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/external-link.tsx"
 import IconDeviceLaptop from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/device-laptop.tsx"
 import IconDeviceGamepad from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/device-gamepad-2.tsx"
+import IconCup from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/cup.tsx"
 import IconFlag from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/flag.tsx"
+import KubeIcon from "./Icons/Kube.tsx";
 
 export default function Hero() {
     return (
@@ -14,14 +16,14 @@ export default function Hero() {
                 <div class="flex flex-row gap-2 items-center justify-center">
                     <IconDeviceLaptop/>
                     <p className="text-xl max-w-lg text-blue-100">
-                        CTF Player | Developer | Student
+                        CTF Player | DevSecOps | ENSIBS
                     </p>
                 </div>
 
                 <div className="flex flex-row gap-2 items-center justify-center">
-                    <IconDeviceGamepad/>
+                    <KubeIcon size={30}/>
                     <p className="text-xl max-w-lg text-blue-100">
-                        Bad At Video Games But Loving Them
+                        Kubernetes Lover
                     </p>
                 </div>
 
@@ -29,6 +31,12 @@ export default function Hero() {
                     <IconFlag/>
                     <p className="text-xl max-w-lg text-blue-100">
                         MAK'HACK CTF Team Member
+                    </p>
+                </div>
+                <div className="flex flex-row gap-2 items-center justify-center">
+                    <IconCup/>
+                    <p className="text-xl max-w-lg text-blue-100">
+                        Coffee Addict
                     </p>
                 </div>
 

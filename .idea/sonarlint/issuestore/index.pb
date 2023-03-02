@@ -21,7 +21,3 @@ K
 routes/_500.tsx,7/6/7625bbc7821ebee227fbe76ecdb21dc9812d86b4
 L
 .github/workflows/deploy.yml,f/1/f130ad0d1d16d0d70ec30d355f736ae3784b05cf
-B
-docker-compose.yml,3/5/35b8c13cf2eb2a194eada000eb310d65aed53b2a
-9
-	deno.lock,2/b/2bb520392d6ecc375feff31447850402cf6735d1

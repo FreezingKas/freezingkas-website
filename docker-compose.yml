@@ -2,6 +2,8 @@ version: "3"
 services:
   app:
     build: .
+    volumes:
+      - ./files:/app/files
     ports:
       - "9001:8000"
     container_name: freezingkas
