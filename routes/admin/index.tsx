@@ -1,4 +1,3 @@
-import {Head} from "https://deno.land/x/fresh@1.1.2/runtime.ts";
 import {Handlers, PageProps} from "https://deno.land/x/fresh@1.1.2/server.ts";
 import Header from "../../components/Header.tsx";
 import Input from "../../islands/Input.tsx";
