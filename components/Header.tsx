@@ -14,8 +14,8 @@ export default function Header({ active }: Props) {
   return (
     <div class="bg-white w-full max-w-screen py-6 px-8 flex flex-col md:flex-row gap-4 mx-auto">
       <div class="flex items-center flex-1">
-        <IconTerminal />
-        <div class="text-2xl  ml-1 font-bold">
+        <IconTerminal size={30} />
+        <div class="text-3xl  ml-1 font-bold">
           FreezingKas
         </div>
       </div>

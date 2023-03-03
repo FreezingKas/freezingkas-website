@@ -44,7 +44,7 @@ export default function Hero() {
             <div>
                 <a
                     href="https://makhack.fr"
-                    class="block mt-4 gap-1 cursor-pointer inline-flex items-center group text-black bg-white px-8 py-2 rounded-md hover:bg-blue-50 font-bold"
+                    class="block mt-4 gap-1 cursor-pointer mx-1 inline-flex items-center group text-black bg-white px-8 py-2 rounded-md hover:bg-blue-50 font-bold"
                 >
                     MAK'HACK{" "} <IconExternalLink/>
                 </a>

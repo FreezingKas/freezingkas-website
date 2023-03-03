@@ -29,4 +29,5 @@ jobs:
             cd /home/github/freezingkas-website
             git pull 
             git status
+            rm deno.lock
             docker compose up --build --force-recreate -d

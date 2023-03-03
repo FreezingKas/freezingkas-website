@@ -19,5 +19,11 @@ K
 routes/write-ups/[read].tsx,a/f/af9ef06da437c4a5d1e00820c5fac8c51b94d330
 ?
 routes/_500.tsx,7/6/7625bbc7821ebee227fbe76ecdb21dc9812d86b4
-L
-.github/workflows/deploy.yml,f/1/f130ad0d1d16d0d70ec30d355f736ae3784b05cf
+E
+components/MyHead.tsx,d/d/dd22ffcf4012c5e0a6524463f9c7dbd2bcb04b34
+@
+routes/index.tsx,5/1/512279a4f91fea2e4abe4059c8b40afd447aa67a
+<
+.env.example,d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871
+9
+	deno.lock,2/b/2bb520392d6ecc375feff31447850402cf6735d1
