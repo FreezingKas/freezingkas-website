@@ -19,3 +19,20 @@ E
 components/MyHead.tsx,d/d/dd22ffcf4012c5e0a6524463f9c7dbd2bcb04b34
 <
 .env.example,d/4/d4dae00d11854b35292c2b8a30515a9a0aa2d871
+Q
+!files/grub_privesc_freezingkas.md,3/3/335545f44691bda1e518a76c3e188d7b5b788c6d
+:
+
+Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+C
+components/Hero.tsx,b/d/bd4bc2a4207ff38bc84bfaf41f060dd7801bcaf3
+L
+.github/workflows/deploy.yml,f/1/f130ad0d1d16d0d70ec30d355f736ae3784b05cf
+E
+components/Header.tsx,3/6/36aef25bb01676aa8d3d032efb640f83d1b3a3e9
+@
+routes/index.tsx,5/1/512279a4f91fea2e4abe4059c8b40afd447aa67a
+I
+components/Icons/Kube.tsx,9/8/98c77ba07b95a2e4ff1427d6ee2024b652568f99
+9
+	deno.lock,2/b/2bb520392d6ecc375feff31447850402cf6735d1
