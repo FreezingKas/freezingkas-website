@@ -1,6 +1,6 @@
 import Header from "../../components/Header.tsx";
 import {Handlers, PageProps} from "$fresh/server.ts";
-import {Marked} from "https://deno.land/x/markdown@v2.0.0/mod.ts";
+import {Marked} from "../../markdown/mod.ts";
 import MyHead from "../../components/MyHead.tsx";
 
 export default function Read(props: PageProps) {

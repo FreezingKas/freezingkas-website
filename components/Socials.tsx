@@ -4,7 +4,7 @@ import Icon3dCubeSphere from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/3d-
 import RootMe from "./Icons/RootMe.tsx";
 
 export default function Socials() {
-    const style_icon = "text-4xl text-gray-500 mx-2 group-hover:text-white transition ease-in-out delay-150 duration-500";
+    const style_icon = "text-4xl text-gray-500 mx-2 group-hover:text-white transition ease-in-out delay-50 duration-200";
     const size_icon = 75;
     return (
         <div className="flex flex-row justify-center items-center gap-6">
