@@ -4,7 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: freezingkas-website:latest
+    image: registry.freezingkas.com/freezingkas-website:latest
     volumes:
       - ./files:/app/files
     container_name: freezingkas

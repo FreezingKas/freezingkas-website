@@ -5,8 +5,6 @@
 main.ts,a/4/a443a4eac0be0c1a031a8734e55c1be4d0d022df
 ?
 twind.config.ts,4/a/4ad05d7fccc08e24c7944a8b4055fd8eae4b4c33
-6
-dev.ts,d/a/da5bb377a4818b77bfdbcc974d19f18b23ee00ac
 D
 components/PopUp.tsx,d/2/d28f6026fcd3d94029b782a9d951c302d4b30027
 E
@@ -26,13 +24,11 @@ Q
 Dockerfile,6/6/6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 C
 components/Hero.tsx,b/d/bd4bc2a4207ff38bc84bfaf41f060dd7801bcaf3
-L
-.github/workflows/deploy.yml,f/1/f130ad0d1d16d0d70ec30d355f736ae3784b05cf
 E
 components/Header.tsx,3/6/36aef25bb01676aa8d3d032efb640f83d1b3a3e9
 @
 routes/index.tsx,5/1/512279a4f91fea2e4abe4059c8b40afd447aa67a
 I
 components/Icons/Kube.tsx,9/8/98c77ba07b95a2e4ff1427d6ee2024b652568f99
-9
-	deno.lock,2/b/2bb520392d6ecc375feff31447850402cf6735d1
+?
+routes/_500.tsx,7/6/7625bbc7821ebee227fbe76ecdb21dc9812d86b4
